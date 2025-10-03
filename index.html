@@ -79,6 +79,44 @@
 							data-translate="navContact"
 							>Contact</a
 						>
+						<!-- Language Switcher -->
+						<div class="relative" id="language-switcher">
+							<button
+								id="language-switcher-button"
+								class="text-gray-800 hover:text-blue-500 flex items-center">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-5 w-5 mr-1"
+									viewBox="0 0 20 20"
+									fill="currentColor">
+									<path
+										d="M10 2a8 8 0 100 16 8 8 0 000-16zM9 14a1 1 0 112 0 1 1 0 01-2 0zM9 6a1 1 0 011-1h0a1 1 0 011 1v4a1 1 0 01-2 0V6z" />
+								</svg>
+								<span data-translate="navLanguage">Langue</span>
+							</button>
+							<div
+								id="language-dropdown"
+								class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50 hidden">
+								<a
+									href="#"
+									class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+									data-lang="fr"
+									>Français</a
+								>
+								<a
+									href="#"
+									class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+									data-lang="en"
+									>English</a
+								>
+								<a
+									href="#"
+									class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+									data-lang="es"
+									>Español</a
+								>
+							</div>
+						</div>
 					</div>
 					<button
 						id="mobile-menu-button"
@@ -141,6 +179,15 @@
 						data-translate="navContact"
 						>Contact</a
 					>
+					<!-- Language Switcher Mobile -->
+					<div class="px-4 py-2">
+						<span class="block text-sm font-semibold text-gray-500" data-translate="navLanguage">Langue</span>
+						<div class="mt-2 space-y-2">
+							<a href="#" class="block text-sm hover:bg-gray-200 p-2 rounded" data-lang="fr">Français</a>
+							<a href="#" class="block text-sm hover:bg-gray-200 p-2 rounded" data-lang="en">English</a>
+							<a href="#" class="block text-sm hover:bg-gray-200 p-2 rounded" data-lang="es">Español</a>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</header>

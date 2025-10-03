@@ -8,6 +8,7 @@ const texts = {
 		navTestimonials: "Témoignages",
 		navProjects: "Projets",
 		navContact: "Contact",
+		navLanguage: "Langue",
 
 		// Hero Section
 		heroTitle: "Enseigner, innover, transformer.",
@@ -210,6 +211,7 @@ const texts = {
 		navTestimonials: "Testimonials",
 		navProjects: "Projects",
 		navContact: "Contact",
+		navLanguage: "Language",
 
 		// Hero Section
 		heroTitle: "Teach, innovate, transform.",
@@ -411,6 +413,7 @@ const texts = {
 		navTestimonials: "Testimonios",
 		navProjects: "Proyectos",
 		navContact: "Contacto",
+		navLanguage: "Idioma",
 
 		// Hero Section
 		heroTitle: "Enseñar, innovar, transformar.",
