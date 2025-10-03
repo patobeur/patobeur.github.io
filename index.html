@@ -3,7 +3,25 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Web Development Today</title>
+		<title>Portfolio de [Your Name] - Formateur en Développement Web, PAO, et IA</title>
+    <meta name="description" content="Formateur passionné en développement web, PAO, bureautique et intelligence artificielle. Découvrez mes projets, compétences et témoignages d'étudiants.">
+    <meta name="keywords" content="formateur, développeur web, PAO, design graphique, bureautique, intelligence artificielle, portfolio, projets, compétences">
+    <meta name="author" content="[Your Name]">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/">
+    <meta property="og:title" content="Portfolio de [Your Name] - Formateur Expert">
+    <meta property="og:description" content="Découvrez le portfolio d'un formateur passionné par le web, le design et l'IA.">
+    <meta property="og:image" content="https://your-website-url.com/assets/hero.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/">
+    <meta property="twitter:title" content="Portfolio de [Your Name] - Formateur Expert">
+    <meta property="twitter:description" content="Découvrez le portfolio d'un formateur passionné par le web, le design et l'IA.">
+    <meta property="twitter:image" content="https://your-website-url.com/assets/hero.jpeg">
+
 		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="stylesheet" href="css/style.css" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -22,28 +40,43 @@
 						<a
 							href="#instructor"
 							class="text-gray-800 hover:text-blue-500"
+							data-translate="navAbout"
 							>A Propos</a
 						>
-						<a href="#courses" class="text-gray-800 hover:text-blue-500"
+						<a
+							href="#courses"
+							class="text-gray-800 hover:text-blue-500"
+							data-translate="navCourses"
 							>Formations</a
 						>
-						<a href="#skills" class="text-gray-800 hover:text-blue-500"
+						<a
+							href="#skills"
+							class="text-gray-800 hover:text-blue-500"
+							data-translate="navSkills"
 							>Compétences</a
 						>
 						<a
 							href="#bureautique"
 							class="text-gray-800 hover:text-blue-500"
+							data-translate="navOffice"
 							>Bureautique</a
 						>
 						<a
 							href="#testimonials"
 							class="text-gray-800 hover:text-blue-500"
+							data-translate="navTestimonials"
 							>Témoignages</a
 						>
-						<a href="#projects" class="text-gray-800 hover:text-blue-500"
+						<a
+							href="#projects"
+							class="text-gray-800 hover:text-blue-500"
+							data-translate="navProjects"
 							>Projets</a
 						>
-						<a href="#contact" class="text-gray-800 hover:text-blue-500"
+						<a
+							href="#contact"
+							class="text-gray-800 hover:text-blue-500"
+							data-translate="navContact"
 							>Contact</a
 						>
 					</div>
@@ -69,36 +102,43 @@
 					<a
 						href="#instructor"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navAbout"
 						>A Propos</a
 					>
 					<a
 						href="#courses"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navCourses"
 						>Formations</a
 					>
 					<a
 						href="#skills"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navSkills"
 						>Compétences</a
 					>
 					<a
 						href="#bureautique"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navOffice"
 						>Bureautique</a
 					>
 					<a
 						href="#testimonials"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navTestimonials"
 						>Témoignages</a
 					>
 					<a
 						href="#projects"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navProjects"
 						>Projets</a
 					>
 					<a
 						href="#contact"
 						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						data-translate="navContact"
 						>Contact</a
 					>
 				</div>
@@ -117,15 +157,19 @@
 				<div class="relative z-10 text-center px-6">
 					<h1
 						class="text-5xl md:text-7xl font-extrabold leading-tight mb-4"
+						data-translate="heroTitle"
 						>Enseigner, innover, transformer.</h1
 					>
-					<p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto"
+					<p
+						class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto"
+						data-translate="heroSubtitle"
 						>Plongez dans l’univers du numérique : PAO, web, bureautique
 						et IA — les outils d’aujourd’hui pour construire demain.</p
 					>
 					<a
 						href="#skills"
 						class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
+						data-translate="heroButton"
 						>Découvrir</a
 					>
 				</div>
@@ -138,16 +182,20 @@
 						<div class="w-full md:w-1/3" data-aos="fade-right">
 							<img
 								src="/assets/image_aquarelle.png"
-								alt="Instructor"
+								alt="Portrait de l'instructeur dans un style aquarelle"
 								class="rounded-full shadow-lg mx-auto" />
 						</div>
 						<div
 							class="w-full md:w-2/3 text-center md:text-left"
 							data-aos="fade-left">
-							<h2 class="text-3xl font-bold text-gray-800 mb-4"
+							<h2
+								class="text-3xl font-bold text-gray-800 mb-4"
+								data-translate="instructorTitle"
 								>À propos / Biographie</h2
 							>
-							<p class="text-xl text-gray-600 mb-6"
+							<p
+								class="text-xl text-gray-600 mb-6"
+								data-translate="instructorBio"
 								>J’enseigne depuis 2009 dans les domaines de la PAO, du
 								développement web et de la bureautique. Passionné par la
 								pédagogie et l’innovation numérique, j’ai élargi mes
@@ -162,18 +210,22 @@
 								class="flex justify-center md:justify-start space-x-4">
 								<span
 									class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									data-translate="tagWebDev"
 									>Developpement Web</span
 								>
 								<span
 									class="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									data-translate="tagPAO"
 									>PAO</span
 								>
 								<span
 									class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									data-translate="tagOffice"
 									>Bureautique</span
 								>
 								<span
 									class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									data-translate="tagAI"
 									>IA</span
 								>
 							</div>
@@ -185,19 +237,27 @@
 			<!-- My Teaching Philosophy Section -->
 			<section id="philosophy" class="py-20 bg-gray-100">
 				<div class="container mx-auto px-6 text-center" data-aos="fade-up">
-					<h2 class="text-3xl font-bold text-gray-800 mb-6"
+					<h2
+						class="text-3xl font-bold text-gray-800 mb-6"
+						data-translate="philosophyTitle"
 						>Ma philosophie d’enseignement repose sur trois piliers :</h2
 					>
-					<p class="text-xl text-gray-600 max-w-3xl mx-auto text-left">
-						L’apprentissage concret — je privilégie les projets, les cas
+					<p
+						class="text-xl text-gray-600 max-w-3xl mx-auto text-left"
+						data-translate="philosophyPillar1"
+						>L’apprentissage concret — je privilégie les projets, les cas
 						réels, les exercices pratiques.<br
 					/></p>
-					<p class="text-xl text-gray-600 max-w-3xl mx-auto text-left">
-						La réflexion critique — je pousse les étudiants à se poser les
+					<p
+						class="text-xl text-gray-600 max-w-3xl mx-auto text-left"
+						data-translate="philosophyPillar2"
+						>La réflexion critique — je pousse les étudiants à se poser les
 						bonnes questions (impact, usage, pertinence).</p
 					>
-					<p class="text-xl text-gray-600 max-w-3xl mx-auto text-left">
-						L’autonomie guidée — je transmets non seulement des outils,
+					<p
+						class="text-xl text-gray-600 max-w-3xl mx-auto text-left"
+						data-translate="philosophyPillar3"
+						>L’autonomie guidée — je transmets non seulement des outils,
 						mais aussi une méthode pour continuer à apprendre par la
 						suite.
 					</p>
@@ -211,10 +271,14 @@
 				<div
 					class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6"
 					data-aos="zoom-in">
-					<h2 class="text-4xl font-bold mb-4"
+					<h2
+						class="text-4xl font-bold mb-4"
+						data-translate="parallaxTitle"
 						>Et si on construisait l’avenir, ensemble ?</h2
 					>
-					<p class="text-xl max-w-2xl"
+					<p
+						class="text-xl max-w-2xl"
+						data-translate="parallaxSubtitle"
 						>Au-delà de l’innovation, posons-nous les bonnes questions :
 						quel impact écologique ont les nouvelles technologies, quel
 						est leur véritable intérêt, et comment les mettre au service
@@ -229,6 +293,7 @@
 					<h2
 						class="text-3xl font-bold text-center text-gray-800 mb-12"
 						data-aos="fade-up"
+						data-translate="coursesTitle"
 						>Domaines d’enseignement</h2
 					>
 					<div
@@ -238,10 +303,14 @@
 							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
 							data-aos="fade-up"
 							data-aos-delay="100">
-							<h3 class="text-xl font-bold mb-3"
+							<h3
+								class="text-xl font-bold mb-3"
+								data-translate="coursePAOTitle"
 								>PAO & Design graphique</h3
 							>
-							<p class="text-gray-600 flex-grow mb-4"
+							<p
+								class="text-gray-600 flex-grow mb-4"
+								data-translate="coursePAODescription"
 								>Création de maquettes, mise en page professionnelle
 								Retouche d’images, traitement visuel Équilibre
 								typographique, gestion des gabarits et styles</p
@@ -249,6 +318,7 @@
 							<a
 								href="#"
 								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								data-translate="courseButton"
 								>En savoir plus</a
 							>
 						</div>
@@ -257,8 +327,14 @@
 							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
 							data-aos="fade-up"
 							data-aos-delay="200">
-							<h3 class="text-xl font-bold mb-3">Développement web</h3>
-							<p class="text-gray-600 flex-grow mb-4"
+							<h3
+								class="text-xl font-bold mb-3"
+								data-translate="courseWebDevTitle"
+								>Développement web</h3
+							>
+							<p
+								class="text-gray-600 flex-grow mb-4"
+								data-translate="courseWebDevDescription"
 								>Frontend : HTML5, CSS3, JavaScript (ES6+), frameworks
 								(React, Vue...) Backend : Node.js, Express, APIs REST /
 								GraphQL Architecture, bases de données (MySQL,
@@ -268,6 +344,7 @@
 							<a
 								href="#"
 								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								data-translate="courseButton"
 								>En savoir plus</a
 							>
 						</div>
@@ -276,8 +353,14 @@
 							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<h3 class="text-xl font-bold mb-3">Bureautique avancée</h3>
-							<p class="text-gray-600 flex-grow mb-4"
+							<h3
+								class="text-xl font-bold mb-3"
+								data-translate="courseOfficeTitle"
+								>Bureautique avancée</h3
+							>
+							<p
+								class="text-gray-600 flex-grow mb-4"
+								data-translate="courseOfficeDescription"
 								>Word : styles, mise en page complexe, publipostage
 								Excel : formules avancées, tableaux croisés,
 								automatisations PowerPoint : présentations
@@ -286,6 +369,7 @@
 							<a
 								href="#"
 								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								data-translate="courseButton"
 								>En savoir plus</a
 							>
 						</div>
@@ -294,10 +378,14 @@
 							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<h3 class="text-xl font-bold mb-3"
+							<h3
+								class="text-xl font-bold mb-3"
+								data-translate="courseAITitle"
 								>Intelligence Artificielle & outils associés</h3
 							>
-							<p class="text-gray-600 flex-grow mb-4"
+							<p
+								class="text-gray-600 flex-grow mb-4"
+								data-translate="courseAIDescription"
 								>Introduction aux concepts de l’IA (machine learning,
 								modèles de langage) Outils accessibles (ChatGPT,
 								intégrations, automatisations) Cas pratiques appliqués à
@@ -306,6 +394,7 @@
 							<a
 								href="#"
 								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								data-translate="courseButton"
 								>En savoir plus</a
 							>
 						</div>
@@ -319,6 +408,7 @@
 					<h2
 						class="text-3xl font-bold text-center text-gray-800 mb-12"
 						data-aos="fade-up"
+						data-translate="techShowcaseTitle"
 						>Technologies que je connais</h2
 					>
 					<div
@@ -427,6 +517,7 @@
 					<h2
 						class="text-3xl font-bold text-center text-gray-800 mb-12"
 						data-aos="fade-up"
+						data-translate="skillsTitle"
 						>Compétences Techniques</h2
 					>
 					<div
@@ -436,10 +527,14 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-6"
 							data-aos="fade-up"
 							data-aos-delay="100">
-							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+							<h3
+								class="text-2xl font-bold mb-4 text-blue-600"
+								data-translate="skillsFrontendTitle"
 								>Frontend</h3
 							>
-							<ul class="space-y-2 text-gray-700">
+							<ul
+								class="space-y-2 text-gray-700"
+								data-translate="skillsFrontendList">
 								<li
 									><i
 										class="fas fa-check-circle text-green-500 mr-2"></i
@@ -467,10 +562,14 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-6"
 							data-aos="fade-up"
 							data-aos-delay="200">
-							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+							<h3
+								class="text-2xl font-bold mb-4 text-blue-600"
+								data-translate="skillsBackendTitle"
 								>Backend</h3
 							>
-							<ul class="space-y-2 text-gray-700">
+							<ul
+								class="space-y-2 text-gray-700"
+								data-translate="skillsBackendList">
 								<li
 									><i
 										class="fas fa-check-circle text-green-500 mr-2"></i
@@ -498,10 +597,14 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-6"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+							<h3
+								class="text-2xl font-bold mb-4 text-blue-600"
+								data-translate="skillsDatabasesTitle"
 								>Bases de Données</h3
 							>
-							<ul class="space-y-2 text-gray-700">
+							<ul
+								class="space-y-2 text-gray-700"
+								data-translate="skillsDatabasesList">
 								<li
 									><i
 										class="fas fa-check-circle text-green-500 mr-2"></i
@@ -529,10 +632,14 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-6"
 							data-aos="fade-up"
 							data-aos-delay="400">
-							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+							<h3
+								class="text-2xl font-bold mb-4 text-blue-600"
+								data-translate="skillsToolsDevOpsTitle"
 								>Outils & DevOps</h3
 							>
-							<ul class="space-y-2 text-gray-700">
+							<ul
+								class="space-y-2 text-gray-700"
+								data-translate="skillsToolsDevOpsList">
 								<li
 									><i
 										class="fas fa-check-circle text-green-500 mr-2"></i
@@ -565,6 +672,7 @@
 					<h2
 						class="text-3xl font-bold text-center text-gray-800 mb-12"
 						data-aos="fade-up"
+						data-translate="officeSkillsTitle"
 						>Compétences en Bureautique</h2
 					>
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
@@ -575,8 +683,14 @@
 							data-aos-delay="100">
 							<i
 								class="fas fa-file-word text-6xl text-blue-700 mb-4"></i>
-							<h3 class="text-2xl font-bold mb-3">Microsoft Word</h3>
-							<p class="text-gray-600"
+							<h3
+								class="text-2xl font-bold mb-3"
+								data-translate="officeWordTitle"
+								>Microsoft Word</h3
+							>
+							<p
+								class="text-gray-600"
+								data-translate="officeWordDescription"
 								>Maîtrise de la mise en page, des styles, du
 								publipostage et de la création de documents
 								professionnels complexes.</p
@@ -589,8 +703,14 @@
 							data-aos-delay="200">
 							<i
 								class="fas fa-file-excel text-6xl text-green-700 mb-4"></i>
-							<h3 class="text-2xl font-bold mb-3">Microsoft Excel</h3>
-							<p class="text-gray-600"
+							<h3
+								class="text-2xl font-bold mb-3"
+								data-translate="officeExcelTitle"
+								>Microsoft Excel</h3
+							>
+							<p
+								class="text-gray-600"
+								data-translate="officeExcelDescription"
 								>Expertise en formules avancées, tableaux croisés
 								dynamiques, graphiques et analyse de données.</p
 							>
@@ -602,10 +722,14 @@
 							data-aos-delay="300">
 							<i
 								class="fas fa-file-powerpoint text-6xl text-red-600 mb-4"></i>
-							<h3 class="text-2xl font-bold mb-3"
+							<h3
+								class="text-2xl font-bold mb-3"
+								data-translate="officePowerPointTitle"
 								>Microsoft PowerPoint</h3
 							>
-							<p class="text-gray-600"
+							<p
+								class="text-gray-600"
+								data-translate="officePowerPointDescription"
 								>Création de présentations percutantes, avec animations,
 								transitions et masques de diapositives personnalisés.</p
 							>
@@ -620,6 +744,7 @@
 					<h2
 						class="text-3xl font-bold text-center text-gray-800 mb-12"
 						data-aos="fade-up"
+						data-translate="testimonialsTitle"
 						>Ce que disent les étudiants</h2
 					>
 					<div
@@ -629,7 +754,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="100">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial1"
 								>"En tant que boulanger, je ne pensais pas qu’Excel
 								pouvait m’être aussi utile dans mon métier. Grâce à
 								cette formation, j’ai appris à mieux gérer mes stocks de
@@ -643,11 +770,17 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_xavier.png"
-									alt="Student 1"
+									alt="Portrait de Xavier Tulipe, un étudiant satisfait"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Xavier Tulipe</p>
-									<p class="text-sm text-gray-500"
+									<p
+										class="font-bold"
+										data-translate="testimonial1Author"
+										>Xavier Tulipe</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial1Role"
 										>Boulanger Artisant</p
 									>
 								</div>
@@ -658,7 +791,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="200">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial2"
 								>"Je suis coiffeur et je n’aurais jamais pensé utiliser
 								Excel dans mon salon. La formation m’a permis
 								d’organiser mon planning de rendez-vous, de suivre les
@@ -669,11 +804,19 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_thomas.png"
-									alt="Student 2"
+									alt="Portrait de Thomas Photo, un étudiant satisfait"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Thomas Photo</p>
-									<p class="text-sm text-gray-500">Coiffeurs</p>
+									<p
+										class="font-bold"
+										data-translate="testimonial2Author"
+										>Thomas Photo</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial2Role"
+										>Coiffeurs</p
+									>
 								</div>
 							</div>
 						</div>
@@ -682,7 +825,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial3"
 								>"Je suis musicienne et j’ai découvert avec cette
 								formation qu’Excel pouvait m’être utile au quotidien. Je
 								m’en sers pour organiser mes répétitions, suivre mes
@@ -692,11 +837,17 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_agathe.png"
-									alt="Student 3"
+									alt="Portrait d'Agathe Zeblouz, une étudiante satisfaite"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Agathe Zeblouz</p>
-									<p class="text-sm text-gray-500"
+									<p
+										class="font-bold"
+										data-translate="testimonial3Author"
+										>Agathe Zeblouz</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial3Role"
 										>Musicienne / Guitariste</p
 									>
 								</div>
@@ -707,7 +858,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial4"
 								>"En tant que fleuriste, je voyais Excel comme quelque
 								chose de trop technique pour moi. Finalement, j’ai
 								appris à y gérer mes commandes de fleurs, mes ventes
@@ -717,11 +870,19 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_nadine.png"
-									alt="Student 3"
+									alt="Portrait de Nadine Rose, une étudiante satisfaite"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Nadine Rose</p>
-									<p class="text-sm text-gray-500">Fleuriste</p>
+									<p
+										class="font-bold"
+										data-translate="testimonial4Author"
+										>Nadine Rose</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial4Role"
+										>Fleuriste</p
+									>
 								</div>
 							</div>
 						</div>
@@ -730,7 +891,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial5"
 								>"Je suis menuisiere et je ne pensais pas qu’Excel
 								pouvait m’aider dans mon atelier. La formation m’a
 								permis de suivre le coût de mes matériaux, de préparer
@@ -741,11 +904,17 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_audrey.png"
-									alt="Student 3"
+									alt="Portrait d'Audrey Dubois, une étudiante satisfaite"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Audrey Dubois</p>
-									<p class="text-sm text-gray-500"
+									<p
+										class="font-bold"
+										data-translate="testimonial5Author"
+										>Audrey Dubois</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial5Role"
 										>Menuisiere / Ébéniste</p
 									>
 								</div>
@@ -756,7 +925,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial6"
 								>"En tant que couturière, je pensais que le code n’était
 								pas pour moi. Pourtant, j’ai appris à faire un site
 								vitrine en HTML/CSS et à ajouter quelques interactions
@@ -767,11 +938,19 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_sylvie.png"
-									alt="Student 3"
+									alt="Portrait de Sylvie Dauphin, une étudiante satisfaite"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Sylvie Dauphin</p>
-									<p class="text-sm text-gray-500">Couturière</p>
+									<p
+										class="font-bold"
+										data-translate="testimonial6Author"
+										>Sylvie Dauphin</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial6Role"
+										>Couturière</p
+									>
 								</div>
 							</div>
 						</div>
@@ -780,7 +959,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial7"
 								>"Je suis mécanicien et je voulais juste comprendre un
 								peu mieux Internet. La formation m’a permis de créer une
 								page claire avec mes services et mes tarifs. Avec
@@ -790,11 +971,19 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_omar.png"
-									alt="Student 3"
+									alt="Portrait d'Omar Marzouki, un étudiant satisfait"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Omar Marzouki</p>
-									<p class="text-sm text-gray-500">Mécanicien</p>
+									<p
+										class="font-bold"
+										data-translate="testimonial7Author"
+										>Omar Marzouki</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial7Role"
+										>Mécanicien</p
+									>
 								</div>
 							</div>
 						</div>
@@ -803,7 +992,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial8"
 								>"Je suis développeur web et je me concentrais surtout
 								sur le code. Grâce à la formation Photoshop, j’ai appris
 								à créer mes propres maquettes et à retoucher des visuels
@@ -814,11 +1005,19 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_allan.png"
-									alt="Student 3"
+									alt="Portrait d'Allan Turning, un étudiant satisfait"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Allan Turning</p>
-									<p class="text-sm text-gray-500">Web Dev</p>
+									<p
+										class="font-bold"
+										data-translate="testimonial8Author"
+										>Allan Turning</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial8Role"
+										>Web Dev</p
+									>
 								</div>
 							</div>
 						</div>
@@ -827,7 +1026,9 @@
 							class="bg-gray-50 rounded-lg shadow-lg p-8"
 							data-aos="fade-up"
 							data-aos-delay="300">
-							<p class="text-gray-600 mb-6 italic"
+							<p
+								class="text-gray-600 mb-6 italic"
+								data-translate="testimonial9"
 								>"Je suis agricultrice depuis de nombreuses années et je
 								pensais que l’intelligence artificielle n’avait rien à
 								voir avec mon métier. Pourtant, la formation m’a montré
@@ -841,11 +1042,19 @@
 							<div class="flex items-center">
 								<img
 									src="/assets/portraits/512/portrait_alice.png"
-									alt="Student 3"
+									alt="Portrait d'Alice Kunda, une étudiante satisfaite"
 									class="w-12 h-12 rounded-full mr-4" />
 								<div>
-									<p class="font-bold">Alice Kunda</p>
-									<p class="text-sm text-gray-500">Agricultrice</p>
+									<p
+										class="font-bold"
+										data-translate="testimonial9Author"
+										>Alice Kunda</p
+									>
+									<p
+										class="text-sm text-gray-500"
+										data-translate="testimonial9Role"
+										>Agricultrice</p
+									>
 								</div>
 							</div>
 						</div>
@@ -862,18 +1071,24 @@
 				<div
 					class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6"
 					data-aos="zoom-in">
-					<h2 class="text-4xl font-bold mb-4"
+					<h2
+						class="text-4xl font-bold mb-4"
+						data-translate="parallaxQuote"
 						>"Le code, c'est comme une histoire drôle.<br />S'il faut
 						l'expliquer, c'est qu'il est mauvais."</h2
 					>
-					<p class="text-xl">- Katty Penflam</p>
+					<p class="text-xl" data-translate="parallaxAuthor"
+						>- Katty Penflam</p
+					>
 				</div>
 			</section>
 
 			<!-- Carousel/Slider Section -->
 			<section id="projects" class="py-20 bg-gray-100">
 				<div class="container mx-auto px-6">
-					<h2 class="text-3xl font-bold text-center text-gray-800 mb-12"
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-translate="projectsTitle"
 						>Quelques Projets & Technologies</h2
 					>
 					<div class="relative">
@@ -886,13 +1101,17 @@
 									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
 									<img
 										src="/assets/projets/archer.jpg"
-										alt="Project 3"
+										alt="Aperçu du projet de jeu de tir à l'arc"
 										class="w-full md:w-1/2 h-64 object-cover" />
 									<div class="p-8 flex flex-col justify-center">
-										<h3 class="text-2xl font-bold mb-3"
+										<h3
+											class="text-2xl font-bold mb-3"
+											data-translate="project1Title"
 											>Un jeu de tire à l'arc.</h3
 										>
-										<p class="text-gray-700 mb-4"
+										<p
+											class="text-gray-700 mb-4"
+											data-translate="project1Description"
 											>Un jeu de tire a l'arc en javascript et
 											threeJS.</p
 										>
@@ -900,6 +1119,7 @@
 											href="javascript:void(0)"
 											onclick="openProjectModal('https://patobeur.github.io/archer/')"
 											class="text-blue-500 font-semibold hover:underline"
+											data-translate="project1Button"
 											>Tester &rarr;</a
 										>
 									</div>
@@ -911,13 +1131,17 @@
 									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
 									<img
 										src="/assets/projets/asteroid.jpg"
-										alt="Project 1"
+										alt="Aperçu du projet de jeu Asteroïdes"
 										class="w-full md:w-1/2 h-64 object-cover" />
 									<div class="p-8 flex flex-col justify-center">
-										<h3 class="text-2xl font-bold mb-3"
+										<h3
+											class="text-2xl font-bold mb-3"
+											data-translate="project2Title"
 											>Hommage au Jeu d'arcade : Asteroïdes</h3
 										>
-										<p class="text-gray-700 mb-4"
+										<p
+											class="text-gray-700 mb-4"
+											data-translate="project2Description"
 											>Développement d'un mini jeu en javascript
 											vanilla.</p
 										>
@@ -925,6 +1149,7 @@
 											href="javascript:void(0)"
 											onclick="openProjectModal('https://patobeur.github.io/asteroid/')"
 											class="text-blue-500 font-semibold hover:underline"
+											data-translate="project2Button"
 											>Tester &rarr;</a
 										>
 									</div>
@@ -936,13 +1161,17 @@
 									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
 									<img
 										src="/assets/projets/newton.jpg"
-										alt="Project 2"
+										alt="Aperçu du projet de jeu exploitant la loi de Newton"
 										class="w-full md:w-1/2 h-64 object-cover" />
 									<div class="p-8 flex flex-col justify-center">
-										<h3 class="text-2xl font-bold mb-3"
+										<h3
+											class="text-2xl font-bold mb-3"
+											data-translate="project3Title"
 											>Un mini jeu exploitant la loi de newton</h3
 										>
-										<p class="text-gray-700 mb-4"
+										<p
+											class="text-gray-700 mb-4"
+											data-translate="project3Description"
 											>Développement d'un mini jeu en javascript
 											vanilla jouable sur mobile</p
 										>
@@ -950,11 +1179,13 @@
 											href="javascript:void(0)"
 											onclick="openProjectModal('https://patobeur.github.io/tagamoshi/sites/newton.html')"
 											class="text-blue-500 font-semibold hover:underline"
+											data-translate="project3Button"
 											>Tester &rarr;</a
 										>
 										<a
 											href="https://codepen.io/Patobeur/pen/rNPKmOX"
 											class="text-blue-500 font-semibold hover:underline"
+											data-translate="project3ButtonCodepen"
 											>sur CodePen &rarr;</a
 										>
 									</div>
@@ -966,19 +1197,24 @@
 									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
 									<img
 										src="/assets/projets/eggwar.jpg"
-										alt="Project 3"
+										alt="Aperçu du projet de jeu en 3D EggWar"
 										class="w-full md:w-1/2 h-64 object-cover" />
 									<div class="p-8 flex flex-col justify-center">
-										<h3 class="text-2xl font-bold mb-3"
+										<h3
+											class="text-2xl font-bold mb-3"
+											data-translate="project4Title"
 											>Un jeu en 3d.</h3
 										>
-										<p class="text-gray-700 mb-4"
+										<p
+											class="text-gray-700 mb-4"
+											data-translate="project4Description"
 											>Test en javascript et threeJS.</p
 										>
 										<a
 											href="javascript:void(0)"
 											onclick="openProjectModal('https://patobeur.github.io/EggWar3D/')"
 											class="text-blue-500 font-semibold hover:underline"
+											data-translate="project4Button"
 											>Tester &rarr;</a
 										>
 									</div>
@@ -1003,7 +1239,9 @@
 			<!-- Contact Form Section -->
 			<section id="contact" class="py-20 bg-white">
 				<div class="container mx-auto px-6">
-					<h2 class="text-3xl font-bold text-center text-gray-800 mb-12"
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-translate="contactTitle"
 						>Contactez-moi</h2
 					>
 					<div
@@ -1014,6 +1252,7 @@
 									<label
 										for="name"
 										class="block text-sm font-medium text-gray-700"
+										data-translate="contactNameLabel"
 										>Nom complet</label
 									>
 									<input
@@ -1027,6 +1266,7 @@
 									<label
 										for="email"
 										class="block text-sm font-medium text-gray-700"
+										data-translate="contactEmailLabel"
 										>Email</label
 									>
 									<input
@@ -1040,6 +1280,7 @@
 									<label
 										for="subject"
 										class="block text-sm font-medium text-gray-700"
+										data-translate="contactSubjectLabel"
 										>Sujet</label
 									>
 									<input
@@ -1052,6 +1293,7 @@
 									<label
 										for="message"
 										class="block text-sm font-medium text-gray-700"
+										data-translate="contactMessageLabel"
 										>Votre message</label
 									>
 									<textarea
@@ -1065,6 +1307,7 @@
 								<button
 									type="submit"
 									class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition duration-300"
+									data-translate="contactSendButton"
 									>Envoyer le message</button
 								>
 							</div>
@@ -1076,16 +1319,19 @@
 			<!-- CTA and Modal Section -->
 			<section class="py-20 bg-blue-600 text-white">
 				<div class="container mx-auto px-6 text-center">
-					<h2 class="text-3xl font-bold mb-4"
+					<h2
+						class="text-3xl font-bold mb-4"
+						data-translate="ctaTitle"
 						>Prêt à Plonger dans le Code ?</h2
 					>
-					<p class="text-lg mb-8"
+					<p class="text-lg mb-8" data-translate="ctaSubtitle"
 						>Découvrez les parcours d'apprentissage et les ressources pour
 						démarrer votre carrière.</p
 					>
 					<button
 						id="open-modal-button"
 						class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300"
+						data-translate="ctaButton"
 						>En savoir plus</button
 					>
 				</div>
@@ -1097,7 +1343,11 @@
 				class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
 				<div class="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full mx-4">
 					<div class="flex justify-between items-center mb-4">
-						<h3 class="text-2xl font-bold">Parcours d'Apprentissage</h3>
+						<h3
+							class="text-2xl font-bold"
+							data-translate="modalTitle"
+							>Parcours d'Apprentissage</h3
+						>
 						<button
 							id="close-modal-button"
 							class="text-gray-500 hover:text-gray-800"
@@ -1105,20 +1355,36 @@
 						>
 					</div>
 					<div>
-						<h4 class="font-semibold text-lg mb-2">Auto-formation</h4>
-						<p class="mb-4"
+						<h4
+							class="font-semibold text-lg mb-2"
+							data-translate="modalSelfTaughtTitle"
+							>Auto-formation</h4
+						>
+						<p
+							class="mb-4"
+							data-translate="modalSelfTaughtDescription"
 							>Des plateformes comme FreeCodeCamp, The Odin Project, et
 							Coursera offrent des cursus complets et gratuits pour
 							apprendre à votre rythme.</p
 						>
-						<h4 class="font-semibold text-lg mb-2">Bootcamps</h4>
-						<p class="mb-4"
+						<h4
+							class="font-semibold text-lg mb-2"
+							data-translate="modalBootcampsTitle"
+							>Bootcamps</h4
+						>
+						<p
+							class="mb-4"
+							data-translate="modalBootcampsDescription"
 							>Des formations intensives de plusieurs mois pour acquérir
 							rapidement les compétences demandées par le marché. (Ex: Le
 							Wagon, Ironhack).</p
 						>
-						<h4 class="font-semibold text-lg mb-2">Formation Initiale</h4>
-						<p
+						<h4
+							class="font-semibold text-lg mb-2"
+							data-translate="modalFormalEducationTitle"
+							>Formation Initiale</h4
+						>
+						<p data-translate="modalFormalEducationDescription"
 							>Les diplômes en informatique (BTS, DUT, Licence, Master)
 							restent une voie royale pour acquérir des bases solides.</p
 						>
@@ -1157,8 +1423,14 @@
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					<!-- About -->
 					<div>
-						<h3 class="text-xl font-bold mb-4">DevWorld</h3>
-						<p class="text-gray-400"
+						<h3
+							class="text-xl font-bold mb-4"
+							data-translate="footerAbout"
+							>DevWorld</h3
+						>
+						<p
+							class="text-gray-400"
+							data-translate="footerAboutText"
 							>Votre guide dans l'écosystème du développement web
 							moderne. Explorez, apprenez et construisez le futur du
 							web.</p
@@ -1166,12 +1438,17 @@
 					</div>
 					<!-- Quick Links -->
 					<div>
-						<h3 class="text-lg font-semibold mb-4">Navigation</h3>
+						<h3
+							class="text-lg font-semibold mb-4"
+							data-translate="footerNavTitle"
+							>Navigation</h3
+						>
 						<ul>
 							<li class="mb-2"
 								><a
 									href="#instructor"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="navAbout"
 									>A Propos</a
 								></li
 							>
@@ -1179,6 +1456,7 @@
 								><a
 									href="#courses"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="navCourses"
 									>Formations</a
 								></li
 							>
@@ -1186,6 +1464,7 @@
 								><a
 									href="#testimonials"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="navTestimonials"
 									>Témoignages</a
 								></li
 							>
@@ -1193,6 +1472,7 @@
 								><a
 									href="#projects"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="navProjects"
 									>Projets</a
 								></li
 							>
@@ -1200,6 +1480,7 @@
 								><a
 									href="#contact"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="navContact"
 									>Contact</a
 								></li
 							>
@@ -1207,12 +1488,17 @@
 					</div>
 					<!-- Resources -->
 					<div>
-						<h3 class="text-lg font-semibold mb-4">Ressources</h3>
+						<h3
+							class="text-lg font-semibold mb-4"
+							data-translate="footerResourcesTitle"
+							>Ressources</h3
+						>
 						<ul>
 							<li class="mb-2"
 								><a
 									href="#"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="footerBlog"
 									>Blog</a
 								></li
 							>
@@ -1220,6 +1506,7 @@
 								><a
 									href="#"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="footerNewsletter"
 									>Newsletter</a
 								></li
 							>
@@ -1227,6 +1514,7 @@
 								><a
 									href="#"
 									class="text-gray-400 hover:text-white transition-colors"
+									data-translate="footerCommunity"
 									>Communauté</a
 								></li
 							>
@@ -1234,7 +1522,11 @@
 					</div>
 					<!-- Social -->
 					<div>
-						<h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+						<h3
+							class="text-lg font-semibold mb-4"
+							data-translate="footerSocialTitle"
+							>Suivez-nous</h3
+						>
 						<div class="flex space-x-4">
 							<a
 								href="#"
@@ -1261,7 +1553,7 @@
 				</div>
 				<div
 					class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
-					<p
+					<p data-translate="footerCopyright"
 						>&copy; 2024 DevWorld. Créé avec
 						<i class="fas fa-heart text-red-500"></i> et du code.</p
 					>
@@ -1364,5 +1656,7 @@
 				once: true,
 			});
 		</script>
+		<script src="js/translations.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
