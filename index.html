@@ -1,86 +1,1267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-		<title>Patobeur Développeur Web</title>
-    
-		<!-- Primary Meta Tags -->
-		<meta name="title" content="Patobeur Développeur Web du turfu !">
-		<meta name="description" content="Développement & techno du Web">
-    
-		<link rel="canonical" href="/" />
-
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://patobeur.github.io">
-		<meta property="og:title" content="Développeur web vanilla junior ⌨️" />
-		<meta property="og:description" content="Javascript, Threejs, Php, Html, Css...">
-		<meta property="og:image" content="https://patobeur.github.io/assets/patobeur.png">
-
-		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:url" content="https://patobeur.github.io">
-		<meta property="twitter:title" content="Développeur web vanilla junior ⌨️" />
-		<meta property="twitter:description" content="Javascript, Threejs, Php, Html, Css...">
-		<meta property="twitter:image" content="https://patobeur.github.io/assets/patobeur.png">
-		<link rel="icon" type="image/png" href="https://patobeur.github.io/assets/favicon.ico">
-		<meta property="og:locale" content="fr_FR" />
-
-		<link rel="stylesheet" href="css.css">
-		
-		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-			crossorigin="anonymous" referrerpolicy="no-referrer" />
-		
-		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web Development Today</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 	</head>
+	<body class="bg-gray-100">
+		<!-- Header/Navbar -->
+		<header class="fixed top-0 left-0 right-0 z-50">
+			<nav class="bg-white/30 backdrop-blur-lg shadow-md">
+				<div
+					class="container mx-auto px-6 py-4 flex justify-between items-center">
+					<a href="#" class="text-2xl font-bold text-gray-800">DevWorld</a>
+					<div class="hidden md:flex space-x-6">
+						<a
+							href="#instructor"
+							class="text-gray-800 hover:text-blue-500"
+							>A Propos</a
+						>
+						<a href="#courses" class="text-gray-800 hover:text-blue-500"
+							>Formations</a
+						>
+						<a href="#skills" class="text-gray-800 hover:text-blue-500"
+							>Compétences</a
+						>
+						<a
+							href="#bureautique"
+							class="text-gray-800 hover:text-blue-500"
+							>Bureautique</a
+						>
+						<a
+							href="#testimonials"
+							class="text-gray-800 hover:text-blue-500"
+							>Témoignages</a
+						>
+						<a href="#projects" class="text-gray-800 hover:text-blue-500"
+							>Projets</a
+						>
+						<a href="#contact" class="text-gray-800 hover:text-blue-500"
+							>Contact</a
+						>
+					</div>
+					<button
+						id="mobile-menu-button"
+						class="md:hidden flex items-center">
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16m-7 6h7"></path>
+						</svg>
+					</button>
+				</div>
+				<!-- Mobile Menu -->
+				<div id="mobile-menu" class="hidden md:hidden">
+					<a
+						href="#instructor"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>A Propos</a
+					>
+					<a
+						href="#courses"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Formations</a
+					>
+					<a
+						href="#skills"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Compétences</a
+					>
+					<a
+						href="#bureautique"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Bureautique</a
+					>
+					<a
+						href="#testimonials"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Témoignages</a
+					>
+					<a
+						href="#projects"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Projets</a
+					>
+					<a
+						href="#contact"
+						class="block py-2 px-4 text-sm hover:bg-gray-200"
+						>Contact</a
+					>
+				</div>
+			</nav>
+		</header>
 
-	<body>
+		<!-- Hero Section -->
 		<main>
-			<div class="image">
-				<img src="./assets/logo_patobeur_transp2.png" alt="Patobeur" title="Patobeur">
-				<div id="count" class="count"></div>
-				<!-- <div class="title">Patobeur.fr</div> -->
+			<section
+				id="hero"
+				class="relative h-screen flex items-center justify-center text-white">
+				<div
+					class="absolute inset-0 bg-cover bg-center"
+					style="background-image: url('/assets/hero.jpeg')"></div>
+				<div class="absolute inset-0 bg-black opacity-50"></div>
+				<div class="relative z-10 text-center px-6">
+					<h1
+						class="text-5xl md:text-7xl font-extrabold leading-tight mb-4"
+						>Le Développement Web d'Aujourd'hui</h1
+					>
+					<p class="text-lg md:text-2xl mb-8 max-w-3xl mx-auto"
+						>Plongez dans l'univers du code, découvrez les compétences,
+						les profils et le quotidien qui forgent les artisans du web
+						moderne.</p
+					>
+					<a
+						href="#skills"
+						class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
+						>Découvrir</a
+					>
+				</div>
+			</section>
+
+			<!-- Instructor Profile Section -->
+			<section id="instructor" class="py-20 bg-white">
+				<div class="container mx-auto px-6">
+					<div class="flex flex-col md:flex-row items-center gap-12">
+						<div class="w-full md:w-1/3" data-aos="fade-right">
+							<!-- src="/assets/image_crayon2.png" -->
+							<!-- src="/assets/image_crayon2.png" -->
+							<img
+								src="/assets/image_aquarelle.png"
+								alt="Instructor"
+								class="rounded-full shadow-lg mx-auto" />
+						</div>
+						<div
+							class="w-full md:w-2/3 text-center md:text-left"
+							data-aos="fade-left">
+							<h2 class="text-3xl font-bold text-gray-800 mb-4"
+								>Formateur en PAO et bureautique</h2
+							>
+							<p class="text-xl text-gray-600 mb-6"
+								>Développeur web passionné par la transmission du
+								savoir, je suis formateur en Bts depuis 2009.
+								<br />J'aime simplifier des concepts complexes pour les
+								rendre accessibles à tous.</p
+							>
+							<div
+								class="flex justify-center md:justify-start space-x-4">
+								<span
+									class="bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									>Developpement Web</span
+								>
+								<span
+									class="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									>PAO</span
+								>
+								<span
+									class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									>Bureautique</span
+								>
+								<span
+									class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded"
+									>IA</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- New Parallax Section -->
+			<section
+				class="relative bg-fixed bg-cover bg-center h-80"
+				style="background-image: url('/assets/avenir.jpeg')">
+				<div class="absolute inset-0 bg-black opacity-60"></div>
+				<div
+					class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6"
+					data-aos="zoom-in">
+					<h2 class="text-4xl font-bold mb-4"
+						>Et si on construisait l’avenir, ensemble ?</h2
+					>
+					<p class="text-xl max-w-2xl"
+						>Au-delà de l’innovation, posons-nous les bonnes questions :
+						quel impact écologique ont les nouvelles technologies, quel
+						est leur véritable intérêt, et comment les mettre au service
+						d’un monde plus juste et responsable ?
+					</p>
+				</div>
+			</section>
+
+			<!-- My Teaching Philosophy Section -->
+			<section id="philosophy" class="py-20 bg-gray-100">
+				<div class="container mx-auto px-6 text-center" data-aos="fade-up">
+					<h2 class="text-3xl font-bold text-gray-800 mb-6"
+						>Ma Philosophie d'Enseignement</h2
+					>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto"
+						>Je privilégie un apprentissage concret, centré sur la
+						<span class="font-semibold text-blue-600"
+							>pratique et les projets</span
+						>.<br />Mon objectif n’est pas seulement de transmettre des
+						connaissances, mais de vous aider à développer une véritable
+						manière de réfléchir et d’agir face aux différentes
+						problematiques. Ensemble, nous créerons, nous relèverons des
+						situations réelles, et je vous donnerai les outils nécessaires
+						pour continuer à apprendre et à évoluer bien au-delà du cours.
+					</p>
+				</div>
+			</section>
+
+			<!-- Course Offerings Section -->
+			<section id="courses" class="py-20 bg-white">
+				<div class="container mx-auto px-6">
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-aos="fade-up"
+						>Formations & Ateliers</h2
+					>
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						<!-- Course Card 1 -->
+						<div
+							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
+							data-aos="fade-up"
+							data-aos-delay="100">
+							<h3 class="text-xl font-bold mb-3"
+								>Développement Frontend de A à Z</h3
+							>
+							<p class="text-gray-600 flex-grow mb-4"
+								>Devenez un expert en création d'interfaces web modernes
+								et interactives. Ce cours couvre tout, de HTML/CSS à
+								React.</p
+							>
+							<a
+								href="#"
+								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								>En savoir plus</a
+							>
+						</div>
+						<!-- Course Card 2 -->
+						<div
+							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
+							data-aos="fade-up"
+							data-aos-delay="200">
+							<h3 class="text-xl font-bold mb-3"
+								>Maîtriser Node.js & le Backend</h3
+							>
+							<p class="text-gray-600 flex-grow mb-4"
+								>Construisez des serveurs performants et des API
+								robustes avec Node.js, Express, et MongoDB. Idéal pour
+								les futurs développeurs backend.</p
+							>
+							<a
+								href="#"
+								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								>En savoir plus</a
+							>
+						</div>
+						<!-- Course Card 3 -->
+						<div
+							class="bg-white rounded-lg shadow-lg p-8 flex flex-col"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<h3 class="text-xl font-bold mb-3"
+								>Atelier Docker & Déploiement</h3
+							>
+							<p class="text-gray-600 flex-grow mb-4"
+								>Apprenez à conteneuriser vos applications avec Docker
+								et à les déployer facilement sur le cloud. Un pas
+								essentiel vers le DevOps.</p
+							>
+							<a
+								href="#"
+								class="mt-auto bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors text-center"
+								>En savoir plus</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Interactive Technology Showcase -->
+			<section id="tech-showcase" class="py-20 bg-gray-100">
+				<div class="container mx-auto px-6">
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-aos="fade-up"
+						>Technologies que je connais</h2
+					>
+					<div
+						class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-8 text-center"
+						data-aos="fade-up"
+						data-aos-delay="200">
+						<div class="tech-icon">
+							<i class="devicon-javascript-plain text-6xl"></i>
+							<p>JavaScript</p>
+						</div>
+						<!-- <div class="tech-icon">
+							<i class="devicon-react-original text-6xl"></i>
+							<p>React</p>
+						</div> -->
+						<div class="tech-icon">
+							<i class="devicon-nodejs-plain text-6xl"></i>
+							<p>Node.js</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-express-original text-6xl"></i>
+							<p>Express</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-mongodb-plain text-6xl"></i>
+							<p>MongoDB</p>
+						</div>
+						<!-- <div class="tech-icon">
+							<i class="devicon-docker-plain text-6xl"></i>
+							<p>Docker</p>
+						</div> -->
+						<div class="tech-icon">
+							<i class="devicon-git-plain text-6xl"></i>
+							<p>Git</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-tailwindcss-plain text-6xl"></i>
+							<p>TailwindCSS</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-html5-plain text-6xl"></i>
+							<p>HTML5</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-css3-plain text-6xl"></i>
+							<p>CSS3</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-sass-original text-6xl"></i>
+							<p>Sass</p>
+						</div>
+						<div class="tech-icon">
+							<i class="devicon-bootstrap-plain text-6xl"></i>
+							<p>Bootstrap</p>
+						</div>
+						<!-- <div class="tech-icon">
+                        <i class="devicon-vuejs-plain text-6xl"></i>
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-angularjs-plain text-6xl"></i>
+                        <p>Angular</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-typescript-plain text-6xl"></i>
+                        <p>TypeScript</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-webpack-plain text-6xl"></i>
+                        <p>Webpack</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-babel-plain text-6xl"></i>
+                        <p>Babel</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-jest-plain text-6xl"></i>
+                        <p>Jest</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-cypressio-plain text-6xl"></i>
+                        <p>Cypress</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-nextjs-original text-6xl"></i>
+                        <p>Next.js</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-gatsby-plain text-6xl"></i>
+                        <p>Gatsby</p>
+                    </div>
+                    <div class="tech-icon">
+                        <i class="devicon-graphql-plain text-6xl"></i>
+                        <p>GraphQL</p>
+                    </div> -->
+						<div class="tech-icon">
+							<i class="devicon-photoshop-plain text-6xl"></i>
+							<p>Photoshop</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Skills Section -->
+			<section id="skills" class="py-20 bg-white">
+				<div class="container mx-auto px-6">
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-aos="fade-up"
+						>Compétences Techniques</h2
+					>
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+						<!-- Frontend -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-6"
+							data-aos="fade-up"
+							data-aos-delay="100">
+							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+								>Frontend</h3
+							>
+							<ul class="space-y-2 text-gray-700">
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>HTML5, CSS3, JavaScript (ES6+)</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>React, Vue.js, Angular</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Tailwind CSS, Bootstrap, Sass</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Responsive Design</li
+								>
+							</ul>
+						</div>
+						<!-- Backend -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-6"
+							data-aos="fade-up"
+							data-aos-delay="200">
+							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+								>Backend</h3
+							>
+							<ul class="space-y-2 text-gray-700">
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Node.js, Express</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Python (Django, Flask)</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>API RESTful & GraphQL</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Authentification (JWT, OAuth)</li
+								>
+							</ul>
+						</div>
+						<!-- Databases -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-6"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+								>Bases de Données</h3
+							>
+							<ul class="space-y-2 text-gray-700">
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>MongoDB, Mongoose</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>PostgreSQL, MySQL</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Firebase</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Gestion de schémas</li
+								>
+							</ul>
+						</div>
+						<!-- Outils & DevOps -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-6"
+							data-aos="fade-up"
+							data-aos-delay="400">
+							<h3 class="text-2xl font-bold mb-4 text-blue-600"
+								>Outils & DevOps</h3
+							>
+							<ul class="space-y-2 text-gray-700">
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Git, GitHub</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Docker, Conteneurisation</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>Webpack, Babel</li
+								>
+								<li
+									><i
+										class="fas fa-check-circle text-green-500 mr-2"></i
+									>CI/CD (GitHub Actions)</li
+								>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Bureautique Section -->
+			<section id="bureautique" class="py-20 bg-white">
+				<div class="container mx-auto px-6">
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-aos="fade-up"
+						>Compétences en Bureautique</h2
+					>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+						<!-- Word -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="100">
+							<i
+								class="fas fa-file-word text-6xl text-blue-700 mb-4"></i>
+							<h3 class="text-2xl font-bold mb-3">Microsoft Word</h3>
+							<p class="text-gray-600"
+								>Maîtrise de la mise en page, des styles, du
+								publipostage et de la création de documents
+								professionnels complexes.</p
+							>
+						</div>
+						<!-- Excel -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="200">
+							<i
+								class="fas fa-file-excel text-6xl text-green-700 mb-4"></i>
+							<h3 class="text-2xl font-bold mb-3">Microsoft Excel</h3>
+							<p class="text-gray-600"
+								>Expertise en formules avancées, tableaux croisés
+								dynamiques, graphiques et analyse de données.</p
+							>
+						</div>
+						<!-- PowerPoint -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<i
+								class="fas fa-file-powerpoint text-6xl text-red-600 mb-4"></i>
+							<h3 class="text-2xl font-bold mb-3"
+								>Microsoft PowerPoint</h3
+							>
+							<p class="text-gray-600"
+								>Création de présentations percutantes, avec animations,
+								transitions et masques de diapositives personnalisés.</p
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Student Testimonials Section -->
+			<section id="testimonials" class="py-20 bg-gray-100">
+				<div class="container mx-auto px-6">
+					<h2
+						class="text-3xl font-bold text-center text-gray-800 mb-12"
+						data-aos="fade-up"
+						>Ce que disent les étudiants</h2
+					>
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						<!-- Testimonial 1 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="100">
+							<p class="text-gray-600 mb-6 italic"
+								>"En tant que boulanger, je ne pensais pas qu’Excel
+								pouvait m’être aussi utile dans mon métier. Grâce à
+								cette formation, j’ai appris à mieux gérer mes stocks de
+								farine, levure et autres ingrédients, à suivre mes
+								ventes au quotidien, et même à calculer mes marges plus
+								facilement. Les tableaux et graphiques me permettent de
+								voir tout de suite ce qui fonctionne ou pas dans ma
+								boulangerie. C’est un vrai gain de temps et
+								d’organisation !"</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_xavier.png"
+									alt="Student 1"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Xavier Tulipe</p>
+									<p class="text-sm text-gray-500"
+										>Boulanger Artisant</p
+									>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 2 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="200">
+							<p class="text-gray-600 mb-6 italic"
+								>"Je suis coiffeur et je n’aurais jamais pensé utiliser
+								Excel dans mon salon. La formation m’a permis
+								d’organiser mon planning de rendez-vous, de suivre les
+								produits que j’utilise le plus et même d’analyser mes
+								chiffres d’affaires par prestation. C’est devenu un
+								outil incontournable pour mieux gérer mon activité."</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_thomas.png"
+									alt="Student 2"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Thomas Photo</p>
+									<p class="text-sm text-gray-500">Coiffeurs</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 3 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"Je suis musicienne et j’ai découvert avec cette
+								formation qu’Excel pouvait m’être utile au quotidien. Je
+								m’en sers pour organiser mes répétitions, suivre mes
+								cachets et prévoir mes dépenses de matériel. Un vrai
+								plus pour mieux structurer ma carrière."</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_agathe.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Agathe Zeblouz</p>
+									<p class="text-sm text-gray-500"
+										>Musicienne / Guitariste</p
+									>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 4 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"En tant que fleuriste, je voyais Excel comme quelque
+								chose de trop technique pour moi. Finalement, j’ai
+								appris à y gérer mes commandes de fleurs, mes ventes
+								selon les saisons et mes dépenses. C’est simple et ça me
+								fait gagner beaucoup de temps dans la boutique"</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_nadine.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Nadine Rose</p>
+									<p class="text-sm text-gray-500">Fleuriste</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 5 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"Je suis menuisiere et je ne pensais pas qu’Excel
+								pouvait m’aider dans mon atelier. La formation m’a
+								permis de suivre le coût de mes matériaux, de préparer
+								mes devis plus rapidement et de comparer mes projets en
+								cours. Aujourd’hui, c’est un vrai soutien pour mieux
+								gérer mes chantiers."</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_audrey.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Audrey Dubois</p>
+									<p class="text-sm text-gray-500"
+										>Menuisiere / Ébéniste</p
+									>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 6 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"En tant que couturière, je pensais que le code n’était
+								pas pour moi. Pourtant, j’ai appris à faire un site
+								vitrine en HTML/CSS et à ajouter quelques interactions
+								en JavaScript. Aujourd’hui, je peux montrer mes modèles
+								en ligne et donner une image professionnelle de mon
+								atelier."</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_sylvie.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Sylvie Dauphin</p>
+									<p class="text-sm text-gray-500">Couturière</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 7 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"Je suis mécanicien et je voulais juste comprendre un
+								peu mieux Internet. La formation m’a permis de créer une
+								page claire avec mes services et mes tarifs. Avec
+								JavaScript, j’ai même ajouté un petit formulaire pour
+								les demandes de rendez-vous. Très concret et utile !"</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_omar.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Omar Marzouki</p>
+									<p class="text-sm text-gray-500">Mécanicien</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 8 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"Je suis développeur web et je me concentrais surtout
+								sur le code. Grâce à la formation Photoshop, j’ai appris
+								à créer mes propres maquettes et à retoucher des visuels
+								pour mes projets. Ça m’apporte plus d’autonomie et je
+								gagne du temps sans dépendre d’un graphiste à chaque
+								étape."</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_allan.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Allan Turning</p>
+									<p class="text-sm text-gray-500">Web Dev</p>
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial 9 -->
+						<div
+							class="bg-gray-50 rounded-lg shadow-lg p-8"
+							data-aos="fade-up"
+							data-aos-delay="300">
+							<p class="text-gray-600 mb-6 italic"
+								>"Je suis agricultrice depuis de nombreuses années et je
+								pensais que l’intelligence artificielle n’avait rien à
+								voir avec mon métier. Pourtant, la formation m’a montré
+								comment utiliser des outils comme ChatGPT, excel et
+								google agenda pour mieux organiser mes récoltes,
+								préparer mes ventes et même trouver des idées pour
+								développer mon activité. C’est un vrai coup de pouce
+								pour moderniser ma ferme tout en restant fidèle à mes
+								valeurs."</p
+							>
+							<div class="flex items-center">
+								<img
+									src="/assets/portraits/portrait_alice.png"
+									alt="Student 3"
+									class="w-12 h-12 rounded-full mr-4" />
+								<div>
+									<p class="font-bold">Alice Kunda</p>
+									<p class="text-sm text-gray-500">Agricultrice</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Parallax Section -->
+			<section
+				id="parallax"
+				class="relative bg-fixed bg-cover bg-center h-96"
+				style="
+					background-image: url('/assets/projets/photo-1498050108023-c5249f4df085.jpeg');
+				">
+				<div class="absolute inset-0 bg-black opacity-50"></div>
+				<div
+					class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-6"
+					data-aos="zoom-in">
+					<h2 class="text-4xl font-bold mb-4"
+						>"Le code est comme une histoire drôle. Si il faut
+						l'expliquer, c'est qu'elle est mauvaise."</h2
+					>
+					<p class="text-xl">- Katty Penflam</p>
+				</div>
+			</section>
+
+			<!-- Carousel/Slider Section -->
+			<section id="projects" class="py-20 bg-gray-100">
+				<div class="container mx-auto px-6">
+					<h2 class="text-3xl font-bold text-center text-gray-800 mb-12"
+						>Quelques Projets & Technologies</h2
+					>
+					<div class="relative">
+						<div
+							id="slider"
+							class="flex transition-transform duration-500 ease-in-out">
+							<!-- Slide 1 -->
+							<div class="w-full flex-shrink-0">
+								<div
+									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+									<img
+										src="/assets/projets/un.jpeg"
+										alt="Project 1"
+										class="w-full md:w-1/2 h-64 object-cover" />
+									<div class="p-8 flex flex-col justify-center">
+										<h3 class="text-2xl font-bold mb-3"
+											>E-commerce Moderne</h3
+										>
+										<p class="text-gray-700 mb-4"
+											>Développement d'une plateforme e-commerce
+											rapide et scalable avec Next.js, Stripe et
+											Vercel.</p
+										>
+										<a
+											href="#"
+											class="text-blue-500 font-semibold hover:underline"
+											>Voir le projet &rarr;</a
+										>
+									</div>
+								</div>
+							</div>
+							<!-- Slide 2 -->
+							<div class="w-full flex-shrink-0">
+								<div
+									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+									<img
+										src="/assets/projets/deux.jpeg"
+										alt="Project 2"
+										class="w-full md:w-1/2 h-64 object-cover" />
+									<div class="p-8 flex flex-col justify-center">
+										<h3 class="text-2xl font-bold mb-3"
+											>API de Microservices</h3
+										>
+										<p class="text-gray-700 mb-4"
+											>Architecture de microservices avec Node.js,
+											Docker et Kubernetes pour une application
+											SaaS.</p
+										>
+										<a
+											href="#"
+											class="text-blue-500 font-semibold hover:underline"
+											>Voir la documentation &rarr;</a
+										>
+									</div>
+								</div>
+							</div>
+							<!-- Slide 3 -->
+							<div class="w-full flex-shrink-0">
+								<div
+									class="bg-white rounded-lg shadow-lg overflow-hidden md:flex">
+									<img
+										src="/assets/projets/trois.jpeg"
+										alt="Project 3"
+										class="w-full md:w-1/2 h-64 object-cover" />
+									<div class="p-8 flex flex-col justify-center">
+										<h3 class="text-2xl font-bold mb-3"
+											>Dashboard Analytique</h3
+										>
+										<p class="text-gray-700 mb-4"
+											>Création d'un tableau de bord de
+											data-visualisation en temps réel avec D3.js et
+											WebSockets.</p
+										>
+										<a
+											href="#"
+											class="text-blue-500 font-semibold hover:underline"
+											>Voir le dashboard &rarr;</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Controls -->
+						<button
+							id="prev"
+							class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-2 ml-4">
+							<i class="fas fa-chevron-left text-gray-800"></i>
+						</button>
+						<button
+							id="next"
+							class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white/50 hover:bg-white rounded-full p-2 mr-4">
+							<i class="fas fa-chevron-right text-gray-800"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact Form Section -->
+			<section id="contact" class="py-20 bg-white">
+				<div class="container mx-auto px-6">
+					<h2 class="text-3xl font-bold text-center text-gray-800 mb-12"
+						>Contactez-moi</h2
+					>
+					<div
+						class="max-w-4xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+						<form action="#" method="POST">
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+								<div>
+									<label
+										for="name"
+										class="block text-sm font-medium text-gray-700"
+										>Nom complet</label
+									>
+									<input
+										type="text"
+										name="name"
+										id="name"
+										autocomplete="name"
+										class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
+								</div>
+								<div>
+									<label
+										for="email"
+										class="block text-sm font-medium text-gray-700"
+										>Email</label
+									>
+									<input
+										type="email"
+										name="email"
+										id="email"
+										autocomplete="email"
+										class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
+								</div>
+								<div class="md:col-span-2">
+									<label
+										for="subject"
+										class="block text-sm font-medium text-gray-700"
+										>Sujet</label
+									>
+									<input
+										type="text"
+										name="subject"
+										id="subject"
+										class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500" />
+								</div>
+								<div class="md:col-span-2">
+									<label
+										for="message"
+										class="block text-sm font-medium text-gray-700"
+										>Votre message</label
+									>
+									<textarea
+										id="message"
+										name="message"
+										rows="4"
+										class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+								</div>
+							</div>
+							<div class="text-right mt-6">
+								<button
+									type="submit"
+									class="bg-blue-500 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-600 transition duration-300"
+									>Envoyer le message</button
+								>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA and Modal Section -->
+			<section class="py-20 bg-blue-600 text-white">
+				<div class="container mx-auto px-6 text-center">
+					<h2 class="text-3xl font-bold mb-4"
+						>Prêt à Plonger dans le Code ?</h2
+					>
+					<p class="text-lg mb-8"
+						>Découvrez les parcours d'apprentissage et les ressources pour
+						démarrer votre carrière.</p
+					>
+					<button
+						id="open-modal-button"
+						class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300"
+						>En savoir plus</button
+					>
+				</div>
+			</section>
+
+			<!-- Modal -->
+			<div
+				id="modal"
+				class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+				<div class="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full mx-4">
+					<div class="flex justify-between items-center mb-4">
+						<h3 class="text-2xl font-bold">Parcours d'Apprentissage</h3>
+						<button
+							id="close-modal-button"
+							class="text-gray-500 hover:text-gray-800"
+							>&times;</button
+						>
+					</div>
+					<div>
+						<h4 class="font-semibold text-lg mb-2">Auto-formation</h4>
+						<p class="mb-4"
+							>Des plateformes comme FreeCodeCamp, The Odin Project, et
+							Coursera offrent des cursus complets et gratuits pour
+							apprendre à votre rythme.</p
+						>
+						<h4 class="font-semibold text-lg mb-2">Bootcamps</h4>
+						<p class="mb-4"
+							>Des formations intensives de plusieurs mois pour acquérir
+							rapidement les compétences demandées par le marché. (Ex: Le
+							Wagon, Ironhack).</p
+						>
+						<h4 class="font-semibold text-lg mb-2">Formation Initiale</h4>
+						<p
+							>Les diplômes en informatique (BTS, DUT, Licence, Master)
+							restent une voie royale pour acquérir des bases solides.</p
+						>
+					</div>
+				</div>
 			</div>
-			<h1>Patobeur EtLardons</h1>
-			<h2>Développeur web full-stack</h2>
-			<h3>Mais très Front qm !</h3>
-
-			<ul>
-				<li>
-					<a href="mailto:a@b.c" rel="noopener noreferrer"
-						title="Pour m'écrire des choses sympas !">
-						<i class="fa-solid fa-square-envelope"></i>
-						<span>Email</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/patobeur" target="_blank" rel="noopener noreferrer"
-						title="Github Patobeur">
-						<i class="fa-brands fa-github"></i>
-						<span>Github</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/#" target="_blank" rel="noopener noreferrer"
-						title="LinkedIn Patobeur">
-						<i class="fa-brands fa-linkedin"></i>
-						<span>PourRire</span>
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/#" target="_blank" rel="noopener noreferrer" title="Twitter Patobeur">
-						<i class="fa-brands fa-twitter-square"></i>
-						<span>NonPlus</span>
-					</a>
-				</li>
-			</ul>
 		</main>
-	</body>
 
+		<!-- Footer -->
+		<footer class="bg-gray-900 text-white">
+			<div class="container mx-auto px-6 py-12">
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<!-- About -->
+					<div>
+						<h3 class="text-xl font-bold mb-4">DevWorld</h3>
+						<p class="text-gray-400"
+							>Votre guide dans l'écosystème du développement web
+							moderne. Explorez, apprenez et construisez le futur du
+							web.</p
+						>
+					</div>
+					<!-- Quick Links -->
+					<div>
+						<h3 class="text-lg font-semibold mb-4">Navigation</h3>
+						<ul>
+							<li class="mb-2"
+								><a
+									href="#instructor"
+									class="text-gray-400 hover:text-white transition-colors"
+									>A Propos</a
+								></li
+							>
+							<li class="mb-2"
+								><a
+									href="#courses"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Formations</a
+								></li
+							>
+							<li class="mb-2"
+								><a
+									href="#testimonials"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Témoignages</a
+								></li
+							>
+							<li class="mb-2"
+								><a
+									href="#projects"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Projets</a
+								></li
+							>
+							<li class="mb-2"
+								><a
+									href="#contact"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Contact</a
+								></li
+							>
+						</ul>
+					</div>
+					<!-- Resources -->
+					<div>
+						<h3 class="text-lg font-semibold mb-4">Ressources</h3>
+						<ul>
+							<li class="mb-2"
+								><a
+									href="#"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Blog</a
+								></li
+							>
+							<li class="mb-2"
+								><a
+									href="#"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Newsletter</a
+								></li
+							>
+							<li class="mb-2"
+								><a
+									href="#"
+									class="text-gray-400 hover:text-white transition-colors"
+									>Communauté</a
+								></li
+							>
+						</ul>
+					</div>
+					<!-- Social -->
+					<div>
+						<h3 class="text-lg font-semibold mb-4">Suivez-nous</h3>
+						<div class="flex space-x-4">
+							<a
+								href="#"
+								class="text-gray-400 hover:text-white transition-colors"
+								><i class="fab fa-github fa-2x"></i
+							></a>
+							<a
+								href="#"
+								class="text-gray-400 hover:text-white transition-colors"
+								><i class="fab fa-linkedin fa-2x"></i
+							></a>
+							<a
+								href="#"
+								class="text-gray-400 hover:text-white transition-colors"
+								><i class="fab fa-twitter fa-2x"></i
+							></a>
+							<a
+								href="#"
+								class="text-gray-400 hover:text-white transition-colors"
+								><i class="fab fa-youtube fa-2x"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div
+					class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-500">
+					<p
+						>&copy; 2024 DevWorld. Créé avec
+						<i class="fas fa-heart text-red-500"></i> et du code.</p
+					>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// Mobile menu
+			const mobileMenuButton = document.getElementById("mobile-menu-button");
+			const mobileMenu = document.getElementById("mobile-menu");
+
+			mobileMenuButton.addEventListener("click", () => {
+				mobileMenu.classList.toggle("hidden");
+			});
+
+			// Carousel
+			const slider = document.getElementById("slider");
+			const prevButton = document.getElementById("prev");
+			const nextButton = document.getElementById("next");
+			if (slider) {
+				const slides = slider.children;
+				const totalSlides = slides.length;
+				let currentIndex = 0;
+
+				function updateSlider() {
+					slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+				}
+
+				prevButton.addEventListener("click", () => {
+					currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+					updateSlider();
+				});
+
+				nextButton.addEventListener("click", () => {
+					currentIndex = (currentIndex + 1) % totalSlides;
+					updateSlider();
+				});
+
+				// Auto-slide
+				setInterval(() => {
+					currentIndex = (currentIndex + 1) % totalSlides;
+					updateSlider();
+				}, 5000);
+			}
+
+			// Modal
+			const openModalButton = document.getElementById("open-modal-button");
+			const closeModalButton = document.getElementById("close-modal-button");
+			const modal = document.getElementById("modal");
+
+			if (openModalButton && closeModalButton && modal) {
+				openModalButton.addEventListener("click", () => {
+					modal.classList.remove("hidden");
+				});
+
+				closeModalButton.addEventListener("click", () => {
+					modal.classList.add("hidden");
+				});
+
+				modal.addEventListener("click", (e) => {
+					if (e.target === modal) {
+						modal.classList.add("hidden");
+					}
+				});
+			}
+		</script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 800,
+				once: true,
+			});
+		</script>
+	</body>
 </html>

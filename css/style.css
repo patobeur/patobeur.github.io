@@ -1,0 +1,36 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.backdrop-blur-lg {
+    backdrop-filter: blur(20px);
+}
+
+#parallax {
+    background-attachment: fixed;
+}
+
+#projects .relative {
+    overflow: hidden;
+}
+
+.tech-icon {
+    transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
+.tech-icon p {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #4a5568;
+    transition: color 0.3s ease;
+}
+
+.tech-icon:hover p {
+    color: #2b6cb0;
+}
